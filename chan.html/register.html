@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATION</title>
+        <style>
+            .bg{
+                background-image: url(./regbg3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        h1{
+          color: black;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          margin-top: 30px;
+      }
+      h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+        margin-top: 50px;
+      }
+        .header{
+            text-align: center;
+        }
+        .box {
+    display: grid;
+    place-items: center;
+    min-width: 100vh;
+    margin-top: 50px;
+    
+               }
+               #one{
+                padding: 7px;
+                border: black;
+                border-width: 2px;
+                border-style: solid;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                margin-left: 20px;
+               }
+               #one:hover{
+                color: black;
+                background-color: white;
+                cursor: pointer;
+               }
+               #two{
+                padding: 7px;
+                margin-left: 20px;
+                margin-top: 30px;
+                border-radius: 5px;
+                border: black;
+                border-width: 2px;
+                border-style: solid;
+                color: white;
+                background-color: black;
+               }
+               .one{
+                display: inline-block;
+                margin-top: 4px;
+               }
+               .two{
+                margin-top: 35px;
+                display: inline-block;
+               }
+               #two:hover{
+                color: black;
+                background-color: white;
+                cursor: pointer;
+               }
+               .three{
+                margin-top: 35px;
+                display: inline-block;
+               }
+               #three{
+                color: white;
+                background-color: black;
+                border: black;
+                border-radius: 5px;
+                border-width: 2px;
+                border-style: solid;
+                padding: 7px;
+                margin-top: 30px;
+                margin-left: 20px;
+               }
+               #three:hover{
+                color: black;
+                background-color: white;
+                cursor: pointer;
+               }
+               .four{
+                margin-top: 35px;
+                display: inline-block;
+               }
+               #four{
+                color: white;
+                background-color: black;
+                border: black;
+                border-radius: 5px;
+                border-width: 2px;
+                border-style: solid;
+                padding: 7px;
+                margin-top: 30px;
+                margin-left: 20px;
+               }
+               #four{
+                cursor: pointer;
+               }
+               .five{
+                margin-top: 35px;
+                display: inline-block;
+               }
+               #five{
+                padding: 7px;
+                border: black;
+                border-width: 2px;
+                border-style: solid;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                margin-left: 20px;
+                margin-top: 30px;
+               }
+               #five:hover{
+                cursor: pointer;
+                color: black;
+                background-color: white;
+               }
+               
+            </style>
+    </head>
+    <body class="bg">
+        <div class="header">
+            <h1>Registration</h1>
+            <h2>Kindly fill in this form to register</h2>
+        </div>
+        <div class="box">
+            <form action="." method="post">
+                <table>
+                    <tr>
+                      <td class="one" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FIRST NAME :</td><td><input type="text" name="fname" placeholder="Enter your name" id="one"></td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="five" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">LAST NAME :</td><td><input type="text" name="l name" placeholder="Enter your name" id="five"></td>
+                    </tr>
+                    <tr>
+                        <td class="two"  style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">E-MAIL :</td> <td> <input type="email" name="email" id="two" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td class="three" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MOBILE NUMBER :</td> <td><input type="number" name="number" placeholder="Enter your number" id="three"></td>
+                    </tr>
+                    <tr>
+                        <td class="four" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">GENDER :</td>
+                        <td><select name="gender"id="four">
+                            <option value="gender">MALE</option>
+                            <OPtion value="gender">FEMALE</OPtion>
+                            <option value="gender">OTHERS</option>
+                        </select></td>                   
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+               </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODD EVEN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="container mt-3" style="font-family: 'Times New Roman', Times, serif;">ODD EVEN</h1>
+    <div class="row container mt-5">
+        <div class="col"><input type="text" class="form-control" id="oddevenst"/></div>
+        <div class="col"><input type="text" name="" id="oddevened" class="form-control"/></div>
+        <div class="col"><button type="submit" class="btn btn-warning" onclick="oddeven()">RESULT</button></div>
+        <div class="col"><p id="result">RESULT :</p></div>
+    </div>
+    <script> 
+           function oddeven(){
+            let oddeven = Number(document.getElementById("oddevenst").value);
+            let evenodd = Number(document.getElementById("oddevened").value);
+            let result = "";
+            for(num = oddeven ; num <=evenodd; num++){
+                let op = "";
+                if((num% 2) != 0){
+                op = "Odd";    
+                }
+                result += (num + "-" + op + "<br>");
+            }
+            document.getElementById("result").innerHTML=result;
+           }
+
+    </script>
+</body>
+</html>

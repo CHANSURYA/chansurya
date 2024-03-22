@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <style>
+       .border{
+            color: black;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            width: 490px;
+            height: 400px;
+            text-align: center;
+            margin-left: 33%;
+            margin-top: 8%;
+            border-radius: 3px;
+        }
+        .one{
+            display: inline-block;
+            margin-top: 30px;
+        }
+        #one{
+            padding: 7px;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color:black;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #one:hover{
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        .two{
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 45px;
+        }
+        #two{
+            padding: 7px;
+            border-width: 2px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: black;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        #two:hover{
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        .bg{
+            background-image: url(./login.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #head{
+            margin-top: 30px;
+        }
+        .box{
+            place-items: center;
+            display: grid;
+            min-width: 50vh;
+        }
+        .btn{
+        margin-top: 30px;
+        display: inline-block;
+        }
+        .three{
+            padding: 7px;
+            border-radius: 5px;
+            border-width: 3px;
+            border-style: solid;
+            color:white;
+            background-color: black;
+            margin-right: 140px;
+            margin-top: 25px;
+
+        }
+        .three:hover{
+            color: black;
+            cursor: pointer;
+            background-color: white;
+
+        }
+        .four{
+            padding: 7px;
+            border-radius: 5px;
+            border-width: 3px;
+            border-style: solid;
+            color:white;
+            background-color: black;
+            margin-top: 25px;
+
+        }
+        .four:hover{
+            color: black;
+            cursor: pointer;
+            background-color: white;
+        }
+        </style>
+</head>
+<body class="bg">
+    <div class="border">
+        <h1 id="head" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">USER LOGIN 💚</h1>
+        <div class="box">
+            <form action="" method="post">
+        <table>
+            <tr class="name">
+                <td style="font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="one" >NAME :</td><td><input type="text" name="name" placeholder="Enter your name" id="one" required></td>
+            </tr>
+            <tr class="pass">
+                <td style="font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="two">PASSWORD :</td><td><input type="password" name="pass" placeholder="Enter your password" id="two" required></td>
+            </tr>
+        </table>
+    </div>
+    <div class="btn">
+        <button class="three" type="submit">Log in</button>
+        <button class="four" type="reset">Cancel</button>
+
+    </div>
+    </div>
+</form>
+</body>
+</html>

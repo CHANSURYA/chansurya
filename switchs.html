@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Examples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Condition Example</h2>
+            <div class="col"><button type="button" class="btn btn-danger" id="main" onclick="homeSwitchSystem('main')">Main</button></div>
+            <div class="col"><button type="button" class="btn btn-danger" id="fan" onclick="homeSwitchSystem('fan')">Fan</button></div>
+            <div class="col"><button type="button" class="btn btn-danger" id="light" onclick="homeSwitchSystem('light')">Light</button></div>
+            <div class="col"><button type="button" class="btn btn-danger" id="tv" onclick="homeSwitchSystem('tv')">TV</button></div>
+            <div class="col"><button type="button" class="btn btn-danger" id="fridge" onclick="homeSwitchSystem('fridge')">Fridge</button></div>
+            <script>
+                var isFanOn = false;
+                var isLightOn = false;
+                var isTvOn = false;
+                var isFridgeOn = false;
+                var isMainOn = false;
+                function homeSwitchSystem(item){
+
+                    let mainSwitch = document.getElementById('main');
+                    let fan = document.getElementById('fan');
+                    let light = document.getElementById('light');
+                    let tv = document.getElementById('tv');
+                    let fridge = document.getElementById('fridge');
+
+                    if(item == 'main'){
+                        if(isMainOn){
+                            mainSwitch.className = "btn btn-danger";
+                            fan.className = "btn btn-danger";
+                            light.className = "btn btn-danger";
+                            tv.className = "btn btn-danger";
+                            fridge.className = "btn btn-danger";
+                            isFanOn = false;
+                            isLightOn = false;
+                            isTvOn = false;
+                            isFridgeOn = false;
+                        }else{
+                            mainSwitch.className = "btn btn-success";
+                        }
+                        isMainOn = !isMainOn;
+                    }
+                    if(item == 'fan' && isMainOn){
+                        if(!isFanOn)
+                            fan.className = "btn btn-success";
+                        else
+                            fan.className = "btn btn-danger";
+                        isFanOn = !isFanOn;
+                    }   
+                    if(item =='light' && isMainOn){
+                        if(!isLightOn)
+                           light.className = "btn btn-success";
+                        else
+                        light.className = "btn btn-danger";
+                       isLightOn = !isFanOn                    
+
+                    }
+                    if(item == 'tv' && isMainOn){
+                      if(!isTvOn)
+                      tv.className = "btn btn-success";
+                    else
+                    tv.className = "btn btn-danger";
+                    isTvOn = !isTvOn
+                    }
+                    if(item == 'fridge' && isMainOn){
+                        if(!isFridgeOn)
+                        fridge.className = "btn btn-success";
+                    else
+                    fridge.className = "btn btn-danger";
+                     isFridgeOn = !isFridgeOn
+                    }
+                    }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
